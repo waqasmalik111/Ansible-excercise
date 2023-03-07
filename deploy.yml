@@ -27,7 +27,7 @@
   hosts: self
   become: yes
   roles:
-    - role: /tmp/deployment/install
+    - role: install
       tags: install
-    - role: /tmp/deployment/config
+    - role: config
       tags: config
